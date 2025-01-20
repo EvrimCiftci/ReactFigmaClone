@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset default styles that might interfere with Tailwind */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: theme('colors.gray.900');
+  background-color: theme('colors.gray.50');
+}
+
+/* Remove default button styles */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/* Basic focus styles */
+:focus {
+  outline: 2px solid theme('colors.blue.500');
+  outline-offset: 2px;
+}
+
+/* Preserve Tailwind's color scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: theme('colors.gray.100');
+    background-color: theme('colors.gray.900');
+  }
+}
