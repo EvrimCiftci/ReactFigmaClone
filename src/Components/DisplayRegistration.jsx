@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'; // Import React and hooks
 import { useNavigate } from 'react-router-dom'; // For navigation between pages
-import { socket, sendMessage } from '../back-end/lib/socket'; // Import WebSocket instance and utility
+import { socket, sendMessage } from '../socket'; // Import WebSocket instance and utility
 import { Loader2 } from 'lucide-react'; // Import a loading spinner icon
 import { motion } from 'framer-motion'; // Import animation utilities from Framer Motion
 

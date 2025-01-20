@@ -30,7 +30,7 @@ const PDFDownloadButton = ({ fabricCanvas }) => {
       tempContext.drawImage(fabricCanvas.getElement(), 0, 0);
   
       // Calculate PDF dimensions (convert pixels to mm for better scaling)
-      const pxToMm = 0.264583; // 1 pixel = 0.264583 mm
+      const pxToMm = 0.264583;
       const width = tempCanvas.width * pxToMm;
       const height = tempCanvas.height * pxToMm;
   

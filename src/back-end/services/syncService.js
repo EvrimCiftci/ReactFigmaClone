@@ -1,4 +1,4 @@
-import { socket } from '../lib/socket';
+import { socket } from '../../socket';
 
 class SyncService {
   constructor() {

@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { socket, sendMessage, addMessageHandler } from '../back-end/lib/socket';
+import { socket, sendMessage, addMessageHandler } from '../socket';
 
 const useStore = create((set, get) => ({
   isConnected: false,
